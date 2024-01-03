@@ -23,8 +23,8 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 620px; /* Adjust as needed */
-    margin: 0 auto; /* Center the container horizontally */
+    max-width: 620px; 
+    margin: 0 auto; 
 }
 
 form {
@@ -32,14 +32,37 @@ form {
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 100%; /* Adjust the width as needed */
-    max-width: 600px; /* Set a max-width to prevent the form from becoming too wide */
-    margin-bottom: 20px; /* Add some spacing between the form and the table */
+    width: 100%; 
+    max-width: 600px; 
+    margin-bottom: 20px; 
 }
+
 #taskTable {
     width: 100%;
-    max-width: 600px; /* Adjust as needed */
+    max-width: 800px; 
+    margin-top: 20px; 
+    border-collapse: collapse;
+    margin-bottom: 20px;
 }
+
+#taskTable th, #taskTable td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+#taskTable th {
+    background-color: #f2f2f2;
+}
+
+#taskTable tbody tr:nth-child(even) {
+    background-color: #f9f9f9; 
+}
+
+#taskTable tbody tr:hover {
+    background-color: #e0e0e0; 
+}
+
 
         label {
             font-weight: bold;
@@ -112,16 +135,16 @@ form {
 }
 
 .btn-reset:hover {
-    text-decoration: none; /* Remove underline */
-    color: #007bff; /* Retain blue text color */
+    text-decoration: none; 
+    color: #007bff; 
     background-color: transparent; 
     box-shadow: none; 
 }
 .btn-reset:hover {
-    text-decoration: none; /* Remove underline */
-    color: #007bff; /* Retain blue text color */
-    background-color: transparent; /* Remove background color */
-    box-shadow: none; /* Remove shadow */
+    text-decoration: none;
+    color: #007bff; 
+    background-color: transparent;
+    box-shadow: none; 
 }
 
 
@@ -194,7 +217,7 @@ form {
         <th>Titre</th>
         <th>Catégorie</th>
         <th>Propriétaire</th>
-        <th>Éléments</th>
+        <th>Sous-taches</th>
     </tr>
     </thead>
     <tbody>
